@@ -1,9 +1,8 @@
-import Link from "next/link";
 import { GameController } from "phosphor-react";
 
 export function Logo() {
     return (
-        <Link href="/" className="flex items-center">
+        <div className="flex items-center cursor-default">
             <GameController
                 size={32}
                 weight="fill"
@@ -11,6 +10,6 @@ export function Logo() {
             />
             <span className="text-2xl text-primary font-bold">Alura</span>
             <span className="text-2xl text-tertiary font-semibold">Geek</span>
-        </Link>
+        </div>
     );
 }

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export function NavMenu() {
+export function MainMenu() {
     const router = useRouter();
 
     function isActive(url: string) {
@@ -13,24 +13,24 @@ export function NavMenu() {
             <ul className="max-w-[1440px] mx-auto h-14 flex items-center gap-6">
                 <li
                     className={`font-semibold text-white cursor-pointer hover:underline underline-offset-2 ${
-                        isActive("/painel") ? "underline" : ""
+                        isActive("/") ? "underline" : ""
                     }`}
                 >
-                    <Link href="/painel">Início</Link>
+                    <Link href="/">Início</Link>
                 </li>
                 <li
                     className={`font-semibold text-white cursor-pointer hover:underline underline-offset-2 ${
-                        isActive("/painel/categorias") ? "underline" : ""
+                        isActive("/categorias") ? "underline" : ""
                     }`}
                 >
-                    <Link href="/painel/categorias">Categorias</Link>
+                    <Link href="/categorias">Categorias</Link>
                 </li>
                 <li
                     className={`font-semibold text-white cursor-pointer hover:underline underline-offset-2 ${
-                        isActive("/painel/produtos") ? "underline" : ""
+                        isActive("/produtos") ? "underline" : ""
                     }`}
                 >
-                    <Link href="/painel/produtos">Produtos</Link>
+                    <Link href="/produtos">Produtos</Link>
                 </li>
             </ul>
         </div>
