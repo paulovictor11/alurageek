@@ -9,30 +9,34 @@ export function MainMenu() {
     }
 
     return (
-        <div className="w-full h-14 bg-primary">
-            <ul className="max-w-[1440px] mx-auto h-14 flex items-center gap-6">
-                <li
-                    className={`font-semibold text-white cursor-pointer hover:underline underline-offset-2 ${
-                        isActive("/") ? "underline" : ""
-                    }`}
-                >
-                    <Link href="/">Início</Link>
-                </li>
-                <li
-                    className={`font-semibold text-white cursor-pointer hover:underline underline-offset-2 ${
-                        isActive("/categorias") ? "underline" : ""
-                    }`}
-                >
-                    <Link href="/categorias">Categorias</Link>
-                </li>
-                <li
-                    className={`font-semibold text-white cursor-pointer hover:underline underline-offset-2 ${
-                        isActive("/produtos") ? "underline" : ""
-                    }`}
-                >
-                    <Link href="/produtos">Produtos</Link>
-                </li>
-            </ul>
-        </div>
+        <ul className="flex items-center gap-4">
+            <li
+                className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                    isActive("/")
+                        ? "bg-blue-500 text-white"
+                        : "text-tertiary hover:bg-blue-100"
+                }`}
+            >
+                <Link href="/">Início</Link>
+            </li>
+            <li
+                className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                    isActive("/categorias")
+                        ? "bg-blue-500 text-white"
+                        : "text-tertiary hover:bg-blue-100"
+                }`}
+            >
+                <Link href="/categorias">Categorias</Link>
+            </li>
+            <li
+                className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                    isActive("/produtos")
+                        ? "bg-blue-500 text-white"
+                        : "text-tertiary hover:bg-blue-100"
+                }`}
+            >
+                <Link href="/produtos">Produtos</Link>
+            </li>
+        </ul>
     );
 }

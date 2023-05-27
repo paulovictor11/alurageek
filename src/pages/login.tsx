@@ -11,11 +11,11 @@ export default function Login() {
 
     function handleLogin(event: FormEvent) {
         event.preventDefault();
-        // setCookie(null, "@app:token", "aaa", {
-        //     maxAge: 5 * 24 * 60 * 60,
-        //     path: "/",
-        // });
-        router.replace("/painel");
+        setCookie(null, "@app:token", "aaa", {
+            maxAge: 5 * 24 * 60 * 60,
+            path: "/",
+        });
+        router.replace("/");
     }
 
     return (
