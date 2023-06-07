@@ -14,7 +14,7 @@ export function MainMenu() {
                 className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
                     isActive("/")
                         ? "bg-blue-500 text-white"
-                        : "text-tertiary hover:bg-blue-100"
+                        : "text-tertiary hover:bg-lightBlue"
                 }`}
             >
                 <Link href="/">Início</Link>
@@ -23,7 +23,7 @@ export function MainMenu() {
                 className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
                     isActive("/categorias")
                         ? "bg-blue-500 text-white"
-                        : "text-tertiary hover:bg-blue-100"
+                        : "text-tertiary hover:bg-lightBlue"
                 }`}
             >
                 <Link href="/categorias">Categorias</Link>
@@ -32,7 +32,7 @@ export function MainMenu() {
                 className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
                     isActive("/produtos")
                         ? "bg-blue-500 text-white"
-                        : "text-tertiary hover:bg-blue-100"
+                        : "text-tertiary hover:bg-lightBlue"
                 }`}
             >
                 <Link href="/produtos">Produtos</Link>
