@@ -21,8 +21,9 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <div className="grid grid-cols-6 gap-4">
-                    <ProductCard />
+                <div className="h-px w-full bg-gray-300 rounded-full mb-3" />
+
+                <div className="grid grid-cols-5 gap-4">
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
@@ -45,8 +46,9 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <div className="grid grid-cols-6 gap-4">
-                    <ProductCard />
+                <div className="h-px w-full bg-gray-300 rounded-full mb-3" />
+
+                <div className="grid grid-cols-5 gap-4">
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
@@ -69,8 +71,9 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <div className="grid grid-cols-6 gap-4">
-                    <ProductCard />
+                <div className="h-px w-full bg-gray-300 rounded-full mb-3" />
+
+                <div className="grid grid-cols-5 gap-4">
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />

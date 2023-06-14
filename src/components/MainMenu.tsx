@@ -10,32 +10,41 @@ export function MainMenu() {
 
     return (
         <ul className="flex items-center gap-4">
-            <li
-                className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
-                    isActive("/")
-                        ? "bg-blue-500 text-white"
-                        : "text-tertiary hover:bg-lightBlue"
-                }`}
-            >
-                <Link href="/">Início</Link>
+            <li>
+                <Link
+                    href="/"
+                    className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                        isActive("/")
+                            ? "bg-blue-500 text-white"
+                            : "text-tertiary hover:bg-lightBlue"
+                    }`}
+                >
+                    Início
+                </Link>
             </li>
-            <li
-                className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
-                    isActive("/categorias")
-                        ? "bg-blue-500 text-white"
-                        : "text-tertiary hover:bg-lightBlue"
-                }`}
-            >
-                <Link href="/categorias">Categorias</Link>
+            <li>
+                <Link
+                    href="/categorias"
+                    className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                        isActive("/categorias")
+                            ? "bg-blue-500 text-white"
+                            : "text-tertiary hover:bg-lightBlue"
+                    }`}
+                >
+                    Categorias
+                </Link>
             </li>
-            <li
-                className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
-                    isActive("/produtos")
-                        ? "bg-blue-500 text-white"
-                        : "text-tertiary hover:bg-lightBlue"
-                }`}
-            >
-                <Link href="/produtos">Produtos</Link>
+            <li>
+                <Link
+                    href="/produtos"
+                    className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                        isActive("/produtos")
+                            ? "bg-blue-500 text-white"
+                            : "text-tertiary hover:bg-lightBlue"
+                    }`}
+                >
+                    Produtos
+                </Link>
             </li>
         </ul>
     );

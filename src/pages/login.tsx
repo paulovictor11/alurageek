@@ -1,6 +1,7 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Input } from "@/components/Input";
+import { MainMenu } from "@/components/MainMenu";
 import { RaisedButton } from "@/components/RaisedButton";
 import { useRouter } from "next/router";
 import { setCookie } from "nookies";
@@ -20,7 +21,7 @@ export default function Login() {
 
     return (
         <>
-            <Header />
+            <Header leading={<MainMenu />} />
 
             <main className="my-24 max-w-[424px] mx-auto">
                 <form onSubmit={handleLogin} className="flex flex-col gap-6">
