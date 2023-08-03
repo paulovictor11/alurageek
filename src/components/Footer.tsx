@@ -56,7 +56,7 @@ export function Footer() {
                 <span>
                     Desenvoldido por{" "}
                     <span className="text-primary font-semibold hover:underline underline-offset-2 cursor-pointer">
-                        Blue Eye Studios
+                        Blue Star Labs
                     </span>
                 </span>
                 <span className="flex items-center gap-1">

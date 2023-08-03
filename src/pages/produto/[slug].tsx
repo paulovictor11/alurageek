@@ -35,8 +35,7 @@ export default function Product() {
                     </h4>
                 </div>
 
-                <div className="grid grid-cols-6 gap-4">
-                    <ProductCard />
+                <div className="grid grid-cols-5 gap-4">
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />

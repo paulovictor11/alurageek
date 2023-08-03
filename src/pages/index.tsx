@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <MainLayout banner={<Banner />}>
             <section>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-3">
                     <h4 className="text-[32px] text-tertiary font-bold">
                         Star Wars
                     </h4>
@@ -21,8 +21,6 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <div className="h-px w-full bg-gray-300 rounded-full mb-3" />
-
                 <div className="grid grid-cols-5 gap-4">
                     <ProductCard />
                     <ProductCard />
@@ -33,7 +31,7 @@ export default function Home() {
             </section>
 
             <section>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-3">
                     <h4 className="text-[32px] text-tertiary font-bold">
                         Consoles
                     </h4>
@@ -46,8 +44,6 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <div className="h-px w-full bg-gray-300 rounded-full mb-3" />
-
                 <div className="grid grid-cols-5 gap-4">
                     <ProductCard />
                     <ProductCard />
@@ -58,7 +54,7 @@ export default function Home() {
             </section>
 
             <section>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-3">
                     <h4 className="text-[32px] text-tertiary font-bold">
                         Diversos
                     </h4>
@@ -70,8 +66,6 @@ export default function Home() {
                         <ArrowRight size={16} weight="bold" />
                     </Link>
                 </div>
-
-                <div className="h-px w-full bg-gray-300 rounded-full mb-3" />
 
                 <div className="grid grid-cols-5 gap-4">
                     <ProductCard />
