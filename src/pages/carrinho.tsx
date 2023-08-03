@@ -2,6 +2,7 @@ import { CartCard } from "@/components/CartCard";
 import { ProductCard } from "@/components/ProductCard";
 import { RaisedButton } from "@/components/RaisedButton";
 import { MainLayout } from "@/layouts/MainLayout";
+import Link from "next/link";
 import { Question } from "phosphor-react";
 
 export default function Cart() {
@@ -64,7 +65,9 @@ export default function Cart() {
                     </ul>
 
                     <div className="text-center mt-4">
-                        <RaisedButton>Checkout</RaisedButton>
+                        <Link href="/checkout">
+                            <RaisedButton>Checkout</RaisedButton>
+                        </Link>
                     </div>
                 </div>
             </div>
