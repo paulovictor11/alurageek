@@ -13,7 +13,7 @@ export function MainMenu() {
             <li>
                 <Link
                     href="/"
-                    className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                    className={`font-semibold cursor-pointer rounded-md px-4 py-2 transition-colors ${
                         isActive("/")
                             ? "bg-blue-500 text-white"
                             : "text-tertiary hover:bg-lightBlue"
@@ -25,7 +25,7 @@ export function MainMenu() {
             <li>
                 <Link
                     href="/categorias"
-                    className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                    className={`font-semibold cursor-pointer rounded-md px-4 py-2 transition-colors ${
                         isActive("/categorias")
                             ? "bg-blue-500 text-white"
                             : "text-tertiary hover:bg-lightBlue"
@@ -37,7 +37,7 @@ export function MainMenu() {
             <li>
                 <Link
                     href="/produtos"
-                    className={`font-semibold cursor-pointer rounded px-4 py-2 transition-colors ${
+                    className={`font-semibold cursor-pointer rounded-md px-4 py-2 transition-colors ${
                         isActive("/produtos")
                             ? "bg-blue-500 text-white"
                             : "text-tertiary hover:bg-lightBlue"

@@ -1,7 +1,10 @@
+import { OutlineButton } from "@/components/OutlineButton";
 import { ProductCard } from "@/components/ProductCard";
 import { RaisedButton } from "@/components/RaisedButton";
+import { Rating } from "@/components/Rating";
 import { Review } from "@/components/Review";
 import { MainLayout } from "@/layouts/MainLayout";
+import { Heart, ShoppingCart } from "phosphor-react";
 
 export default function Product() {
     return (
@@ -9,13 +12,37 @@ export default function Product() {
             <section className="grid grid-cols-2 gap-8">
                 <div className="w-full h-[403px] bg-zinc-300 rounded-lg" />
 
-                <div className="flex flex-col gap-2">
-                    <h1 className=" text-6xl text-tertiary font-medium">
-                        Produto XYZ
+                <div className="flex flex-col gap-6">
+                    <h1 className=" text-2xl text-tertiary font-semibold">
+                        Apple iMac 24" All-In-One Computer, Apple M1, 8GB RAM,
+                        256GB SSD, Mac OS, Pink
                     </h1>
-                    <h6 className="text-tertiary font-bold text-lg">
-                        R$ 60,00
-                    </h6>
+
+                    <div className="flex items-center gap-10">
+                        <h6 className="text-black font-bold text-3xl">
+                            R$ 60,00
+                        </h6>
+
+                        <Rating />
+
+                        <span className="text-tertiary font-bold text-sm hover:underline underline-offset-1 cursor-pointer">
+                            345 reviews
+                        </span>
+                    </div>
+
+                    <div className="flex items-center gap-4">
+                        <OutlineButton>
+                            <Heart size={20} />
+                            Add to favorites
+                        </OutlineButton>
+
+                        <RaisedButton>
+                            <ShoppingCart size={20} />
+                            Add to cart
+                        </RaisedButton>
+                    </div>
+
+                    <div className="bg-gray-300 h-px w-full rounded-full" />
 
                     <span className="text-zinc-400 text-justify font-medium mb-2">
                         Voluptas voluptatum quibusdam similique, class debitis
@@ -33,8 +60,6 @@ export default function Product() {
                         doloribus vero dictum? Penatibus donec placeat faucibus,
                         dolorum do. Animi porta anim magnam.
                     </span>
-
-                    <RaisedButton>Comprar</RaisedButton>
                 </div>
             </section>
 
